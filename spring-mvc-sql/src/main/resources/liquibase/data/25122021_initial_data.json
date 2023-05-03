@@ -28,6 +28,18 @@
               "tableName": "treatment",
               "file": "/liquibase/data/initial-data/seed-treatment.csv"
             }
+          },
+          {
+            "loadData": {
+              "tableName": "adopter",
+              "file": "/liquibase/data/initial-data/seed-adopter.csv"
+            }
+          },
+          {
+            "loadData": {
+              "tableName": "adoption",
+              "file": "/liquibase/data/initial-data/seed-adoption.csv"
+            }
           }
         ]
       }

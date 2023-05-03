@@ -13,6 +13,7 @@ import javax.persistence.Table;
 @Setter
 @Getter
 @Table(name = "pet")
+@org.springframework.data.relational.core.mapping.Table("pet")
 public class PetEntity {
 
   @Id
