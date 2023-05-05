@@ -4,6 +4,11 @@ server:
   servlet:
     context-path: /api/${api-version}
 
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: DEBUG
+    com.road.master.PetShelter.infrastructure.api.LoggingFilterBean: INFO
+
 spring:
   graphql:
     graphiql:

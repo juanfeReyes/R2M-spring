@@ -7,7 +7,6 @@ import org.springframework.data.relational.core.mapping.MappedCollection;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 @Data
 @Table("adoption")
@@ -16,11 +15,11 @@ public class AdoptionEntity {
   @Id
   private String id;
 
-  @MappedCollection(idColumn = "id")
-  private Set<PetEntity> pet;
+  @MappedCollection(idColumn = "id", keyColumn = "pet_id")
+  private PetEntity pet;
 
-  @MappedCollection(idColumn = "id")
-  private Set<AdopterEntity> adopterEntity;
+  @MappedCollection(idColumn = "id", keyColumn = "adopter_id")
+  private AdopterEntity adopterEntity;
 
   private LocalDate adoptionDate;
 
